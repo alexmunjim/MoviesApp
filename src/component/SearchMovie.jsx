@@ -9,7 +9,8 @@ export default function SearchMovie() {
 
     function handleSubmit(e){
         e.preventDefault();//Se usa para evitar comportamiento por defecto del evento submit
-        setQuery(e.target.elements.search.value);
+        setQuery(document.getElementById("busqueda").value);
+        
     }
 
     async function fetchMoviesName(queryTerm){
@@ -52,9 +53,12 @@ export default function SearchMovie() {
                     <button type="submit" className="btn btn-btn-secondary">Buscar pelicula</button>
                 </div>
             </form>
-            {movieList.map((peliculas, index) => (
-                <MovieCard key = {index} pelicula={peliculas}></MovieCard>
-            ))}
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                {movieList.map((peliculas, index) => (
+                    <MovieCard key = {index} pelicula={peliculas}/>
+                ))}
+                </div>
+           
         </div>
 
     </>);
