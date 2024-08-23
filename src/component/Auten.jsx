@@ -3,7 +3,6 @@ import { auth, googleProvider } from "../firebaseConfig";
 import { createUserWithEmailAndPassword, signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
 import MovieList from "./Movielist";
 
-
 export default function Auten(){
 
     const [email, setEmail] = useState("");
