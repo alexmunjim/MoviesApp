@@ -1,5 +1,6 @@
 import MovieList from './component/Movielist.jsx';
 import './App.css';
+import Auten from './component/Auten.jsx';
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     <>
     <div className="container">
     <h1>En Cartelera</h1>    
-        <MovieList/>
+        <Auten/>
     </div>
     </>
   );
