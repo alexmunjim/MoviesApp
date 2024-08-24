@@ -42,9 +42,6 @@ export default function Auten(){
             src="https://fbi.cults3d.com/uploaders/24218162/illustration-file/bc56feb5-1b8e-4e7e-b66d-e066a384b8a2/Pokebola-0001.gif"
             className="mx-auto h-10 w-auto"
           />
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Sign in to your account
-          </h2>
         </div>
 
         <div className="">
@@ -55,6 +52,12 @@ export default function Auten(){
             </>
               
           ) : (
+           <>
+           
+          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+            Sign in to your account
+          </h2>
+
           <form action="#" method="POST" className="space-y-6 mt-10 sm:mx-auto sm:w-full sm:max-w-sm" onSubmit={e => e.preventDefault()}>
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
@@ -104,6 +107,8 @@ export default function Auten(){
               </button>
             </div>
           </form>
+
+           </> 
           )}
         </div>
       </div>
