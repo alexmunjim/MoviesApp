@@ -50,7 +50,7 @@ export default function SearchMovie() {
             <form onSubmit={handleSubmit}>
                 <div className="input-group">
                     <input type="text" id="busqueda" className="form-control"></input>
-                    <button type="submit" className="btn btn-btn-secondary">Buscar pelicula</button>
+                    <button type="submit" className="">Buscar pelicula</button>
                 </div>
             </form>
                 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
